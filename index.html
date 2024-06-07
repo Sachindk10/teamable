@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teamable</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div id="display-view">
+      <h1>User profile</h1>
+      <img src="./dog.png" alt="dog looking in a monitor" />
+      <span>Name: </span><b id="name">Sachin Dk</b>
+      <hr />
+
+      <span>Email: </span><b id="email">sachindkvga@gmail.com</b>
+      <hr />
+
+      <span>Interests: </span><b id="interests">coding</b>
+      <hr />
+
+      <button onclick="handleEditProfile()">Edit profile</button>
+    </div>
+
+    <div id="edit-view">
+            <h1>User profile</h1>
+            <img src="./dog.png" alt="dog looking in a monitor" />
+
+            <span>Name: </span>
+            <input type="text" id="input-name" placeholder="name"/>
+            <hr />
+      
+            <span>Email: </span>
+            <input type="email" id="input-email" placeholder="sachindkvga@gmail.com">
+            <hr />
+      
+            <span>Interests: </span>
+            <input type="text" placeholder="Coding" id="input-interests">
+            <hr />
+      
+            <button onclick="handleUpdateProfile()">Update profile</button>
+    </div>
+  </body>
+</html>
+ 
