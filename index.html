@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./app.js"></script>
     <script src="./node_modules/validator/validator.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/Datepicker.js/dist/css/datepicker.material.css">
+    <script src="./node_modules/Datepicker.js/dist/datepicker.js"></script>
   </head>
   <body>
     <div id="display-view">
@@ -21,7 +23,8 @@
       <span>Interests: </span><b id="interests">coding</b>
       <hr />
 
-      <button onclick="handleEditProfile()">Edit profile</button>
+
+      <button id="btn" onclick="handleEditProfile()">Edit profile</button>
     </div>
 
     <div id="edit-view">
@@ -39,7 +42,10 @@
             <span>Interests: </span>
             <input type="text" placeholder="Coding" id="input-interests">
             <hr />
-      
+
+            <span>Birthday: </span>
+            <input type="text" id="birthday">
+            <hr/>
             <button onclick="handleUpdateProfile()">Update profile</button>
     </div>
   </body>
